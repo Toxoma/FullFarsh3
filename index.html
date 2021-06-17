@@ -10,15 +10,33 @@
 </head>
 
 <body>
-    <input id="input" type="text">
-    <p id="parag"></p>
+    <button id="btnPlay">Play</button>
+    <button id="btnReset">Reset</button>
+    <div class="wrapp">
+        <img class="car" src="img/car.svg" alt="">
+    </div>
 </body>
 
 </html>
 
 <style lang="scss">
-    input,
-    p {
+    body {
+        background-image: url('img/road.jpg');
+    }
+
+    .btnPlay {
+        z-index: 2;
+    }
+
+    button {
         font-size: 30px;
+        padding: 10px 50px;
+    }
+
+    .car {
+        position: absolute;
+        top: 500px;
+        left: 0px;
+        width: 100px;
     }
 </style>
